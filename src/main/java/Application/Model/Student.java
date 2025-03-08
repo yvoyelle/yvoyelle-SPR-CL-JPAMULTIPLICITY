@@ -44,4 +44,9 @@ public class Student {
                 ", classroom=" + classroom +
                 '}';
     }
+
+    public Student removed() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'removed'");
+    }
 }

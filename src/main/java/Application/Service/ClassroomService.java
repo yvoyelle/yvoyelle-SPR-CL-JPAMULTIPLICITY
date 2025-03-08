@@ -43,7 +43,9 @@ public class ClassroomService {
         Optional<Classroom> classroomOptional = classroomRepository.findById(classroomId);
         if(classroomOptional.isPresent()){
             Classroom classroom = classroomOptional.get();
+
             classroom.getStudents().add(student);
+            
             classroomRepository.save(classroom);
         }
     }
